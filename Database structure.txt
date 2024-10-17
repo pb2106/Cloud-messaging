@@ -1,0 +1,38 @@
+		Registration
++-------+-----------+----------+------+------------------------------+-------------------+---------------+
+| Sl_no | Timestamp | Local_Ip | Name | UserName | Password (Hashed) | IP BLOCKED OR NOT | Useragreement |
++-------+-----------+----------+------+----------+-------------------+-------------------+---------------+
+
+		LOGIN
++-------+-----------+----------+----------+
+| Sl_no | TimeStamp | Local_Ip | UserName |
++-------+-----------+----------+----------+
+
+		Chat/Function
++-------+-----------+--------+----------+---------+
+| Sl_no | TimeStamp | Sender | Reciever | Message |
++-------+-----------+--------+----------+---------+
+
++-------+-----------+----------+--------+---------+
+| Sl_no | TimeStamp | Local_Ip | Sender | Message |
++-------+-----------+----------+--------+---------+
+
+
+
+	FLOW OF CODE
+			      Login(display error if username/
+					password doesnt exist)			  [ MESSAGE ] 
+HomePage===> [Register/Login]========> [Function/Message] =======> [Upload timestamp,sender,reciever,message]
+		||
+     [Register] || {DISPLAY ERROR IF USERNAME ALREADY TAKEN}
+		||
+		\/
+	Upload [UserName,Password,Name] to registration table
+		
+		TAKE Back to HomePage
+
+LOGIC FOR CHAT:
+--> initially after login prints all messages 
+--> asks for a new message
+--> prints that message
+--> prints new message while also asking for new message
