@@ -1,9 +1,8 @@
-# login: prabhav.m.naik@gmail.com
-# pass: Kanna@3005
+
 import pymongo
 from tabulate import tabulate
 from datetime import datetime
-client = pymongo.MongoClient("mongodb+srv://talkitive:class12proj@talkitive.0rpcz4p.mongodb.net/")
+client = pymongo.MongoClient("your mongodb connection string")
 db = client['talkitive']
 ###
 print("""PYMONGO - DB ADMIN""")
