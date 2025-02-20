@@ -2,7 +2,7 @@
 import pymongo
 from tabulate import tabulate
 from datetime import datetime
-client = pymongo.MongoClient("your mongodb connection string")
+client = pymongo.MongoClient("mongodb+srv://talkitive:class12proj@talkitive.0rpcz4p.mongodb.net/",tlsCAFile=certifi.where())
 db = client['talkitive']
 ###
 print("""PYMONGO - DB ADMIN""")
