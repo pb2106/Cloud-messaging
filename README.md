@@ -43,7 +43,7 @@ pip install pymongo tabulate certifi
 1. Clone the repository or download the project files.
 2. Execute the main script to launch the application:
 ```bash
-python main.py
+python Cloud Messaging Service.py
 ```
 
 ## Application Structure
