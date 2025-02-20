@@ -26,7 +26,7 @@ while done:
                  #[DATABASE]#
 #----------------X----------X---------------------X
 try:
-    client=pymongo.MongoClient("Enter-your-mongodb-connection-string-here",tlsCAFile=certifi.where())
+    client=pymongo.MongoClient("mongodb+srv://talkitive:class12proj@talkitive.0rpcz4p.mongodb.net/",tlsCAFile=certifi.where())
     db=client['talkitive']
     db["Registration"].create_index("Username", unique=True)
     collection=db["Registration"]
